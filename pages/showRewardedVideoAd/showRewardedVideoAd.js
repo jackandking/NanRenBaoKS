@@ -65,4 +65,11 @@ Page({
                     });
             });
     },
+    
+    onShareAppMessage: function () {
+        return {
+            title: '人人爱男人宝',
+            path: '/pages/showRewardedVideoAd/showRewardedVideoAd'
+        }
+    }
 })

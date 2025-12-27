@@ -103,5 +103,12 @@ Page({
         interstitialAd.load().catch(err => {
             console.log('插屏广告加载失败', err);
         });
+    },
+    
+    onShareAppMessage: function () {
+        return {
+            title: '人人爱男人宝',
+            path: '/pages/rewardedWebview/rewardedWebview'
+        }
     }
 })
